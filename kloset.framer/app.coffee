@@ -6,7 +6,7 @@ flow = new FlowComponent
 # Browse
 flow.showNext(figma.Browse)
 # go to Detail view
-figma.first_8.onClick (event, layer) ->
+figma.first_7.onClick (event, layer) ->
 	flow.showNext(figma.Detail_Main)
 figma.back_6.onClick (event, layer) ->
 	flow.showPrevious()
