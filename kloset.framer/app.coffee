@@ -28,3 +28,16 @@ figma.write_review.onClick  ->
 figma.write.onClick ->
 	flow.showNext(figma.Rate_form)
 
+
+
+# Browse
+# go to Browse
+figma.back_4.onClick (event, layer) ->
+	flow.showNext(figma.Browse)
+# go to Detail view
+figma.first_8.onClick (event, layer) ->
+	flow.showNext(figma.Detail_Main_(no_fab))
+	
+# go to Camera
+figma.post.onClick (event, layer) ->
+	flow.showNext(figma.Camera)
