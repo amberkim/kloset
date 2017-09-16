@@ -4,8 +4,21 @@ figma = Framer.Importer.load("imported/Final@1x", scale: 1)
 
 flow = new FlowComponent
 
+# Browse
+flow.showNext(figma.Browse)
+# go to Detail view
+figma.first_8.onClick (event, layer) ->
+	flow.showNext(figma.Detail_Main)
+figma.back_6.onClick (event, layer) ->
+	flow.showPrevious()
+	
+# go to Profile
+
+
 # Giving Away
-flow.showNext(figma.Giving_Away)
+# back
+figma.back_4.onClick (event, layer) ->
+	flow.showPrevious()
 # go to Receiving
 figma.Group_5.onClick ->
 	flow.showNext(figma.Receiving)
@@ -30,14 +43,12 @@ figma.write.onClick ->
 
 
 
-# Browse
-# go to Browse
-figma.back_4.onClick (event, layer) ->
-	flow.showNext(figma.Browse)
-# go to Detail view
-figma.first_8.onClick (event, layer) ->
-	flow.showNext(figma.Detail_Main_(no_fab))
+
 	
+# Camera
 # go to Camera
-figma.post.onClick (event, layer) ->
+figma.post_2.onClick (event, layer) ->
 	flow.showNext(figma.Camera)
+# back to Browse
+figma.back_10.onClick (event, layer) ->
+	flow.showPrevious()
