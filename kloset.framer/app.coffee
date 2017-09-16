@@ -15,7 +15,7 @@ figma.back_6.onClick (event, layer) ->
 
 
 # Giving Away
-# back
+# backI 
 figma.back_4.onClick (event, layer) ->
 	flow.showPrevious()
 # go to Receiving
