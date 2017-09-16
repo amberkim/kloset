@@ -5,15 +5,35 @@ flow = new FlowComponent
 
 # Browse
 flow.showNext(figma.Browse)
-# go to Detail view
-figma.first_7.onClick (event, layer) ->
-	flow.showNext(figma.Detail_Main)
-figma.back_6.onClick (event, layer) ->
-	flow.showPrevious()
-	
+
 # go to Profile
 figma.pic.onClick (event, layer) ->
 	flow.showNext(figma.Giving_Away)
+
+# go to bag
+figma.bag_3.onClick (event, layer) ->
+	flow.showOverlayRight(figma.Bag)
+	# close bag
+	figma.close_3.onClick (event, layer) ->
+		flow.showPrevious()
+
+# go to Detail view
+figma.post_6.onClick (event, layer) ->
+	flow.showNext(figma.Detail_Main)
+	# back btn
+	figma.back_6.onClick (event, layer) ->
+		flow.showPrevious()
+
+# go to Camera
+figma.post_3.onClick (event, layer) ->
+	flow.showNext(figma.Camera)
+	# back btn
+	figma.back_10.onClick (event, layer) ->
+		flow.showPrevious()
+	# take picture
+	figma.btn_9.onClick (event, layer) ->
+		flow.showNext(figma.Camera_after_pic)
+	
 
 # Giving Away
 # backI 
@@ -51,9 +71,6 @@ figma.write.onClick ->
 figma.person_3.onClick ->
 	flow.showNext(figma.Profile)
 
-# Profile
-
-
 # Rate form
 # close Rate form
 figma.close.onClick ->
@@ -62,13 +79,3 @@ figma.close.onClick ->
 figma.submit.onClick ->
 	flow.showPrevious()
 
-
-
-	
-# Camera
-# go to Camera
-figma.post_2.onClick (event, layer) ->
-	flow.showNext(figma.Camera)
-# back to Browse
-figma.back_10.onClick (event, layer) ->
-	flow.showPrevious()
