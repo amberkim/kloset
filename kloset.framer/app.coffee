@@ -12,7 +12,8 @@ figma.back_6.onClick (event, layer) ->
 	flow.showPrevious()
 	
 # go to Profile
-
+figma.pic.onClick (event, layer) ->
+	flow.showNext(figma.Giving_Away)
 
 # Giving Away
 # backI 
