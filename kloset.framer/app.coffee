@@ -12,7 +12,7 @@ figma.pic.onClick (event, layer) ->
 
 # go to bag
 figma.bag_3.onClick (event, layer) ->
-	flow.showOverlayRight(figma.Bag)
+	flow.showNext(figma.Bag)
 	# close bag
 	figma.close_3.onClick (event, layer) ->
 		flow.showPrevious()
@@ -23,6 +23,18 @@ figma.post_6.onClick (event, layer) ->
 	# back btn
 	figma.back_6.onClick (event, layer) ->
 		flow.showPrevious()
+	# go to bag
+	figma.bag_2.onClick (event, layer) ->
+		flow.showNext(figma.Bag)
+	# go to more images
+	figma.img_9.onClick (event, layer) ->
+		flow.showNext(figma.Detail_Imgs)
+	# close more images
+	figma.close_5.onClick (event, layer) ->
+		flow.showPrevious()
+	# add to bag
+	figma.add_bag_2.onClick (event, layer) ->
+		flow.showNext(figma.Detail_Main_after_added)
 
 # go to Camera
 figma.post_3.onClick (event, layer) ->
