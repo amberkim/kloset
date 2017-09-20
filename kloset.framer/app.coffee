@@ -30,7 +30,7 @@ figma.post_6.onClick (event, layer) ->
 	figma.img_9.onClick (event, layer) ->
 		flow.showNext(figma.Detail_Imgs)
 	# close more images
-	figma.close_5.onClick (event, layer) ->
+	figma.close_4.onClick (event, layer) ->
 		flow.showPrevious()
 	# add to bag
 	figma.add_bag_2.onClick (event, layer) ->
@@ -42,10 +42,38 @@ figma.post_3.onClick (event, layer) ->
 	# back btn
 	figma.back_10.onClick (event, layer) ->
 		flow.showPrevious()
+		
 	# take picture
-	figma.btn_9.onClick (event, layer) ->
+	figma.btn_8.onClick (event, layer) ->
 		flow.showNext(figma.Camera_after_pic)
+	# switch to gallery tab after take pic
+	figma.gallery_3.onClick (event, layer) ->
+		flow.showNext(figma.Gallery)
+	# see gallery section for back to cam tab
+	# back btn to browse
+	figma.back_9.onClick (event, layer) ->
+		flow.showPrevious()
+		flow.showPrevious()
 	
+	# switch to gallery tab
+# 	figma.gallery_4.onClick (event, layer) ->
+# 		flow.showNext(figma.Gallery)
+	# gallery back btn to browse
+	figma.back_8.onClick (event, layer) ->
+		flow.showPrevious()
+		flow.showPrevious()
+	# switch back to cam
+	figma.cam.onClick (event, layer) ->
+		flow.showPrevious()
+	
+	# go to add detail
+	figma.next.onClick (event, layer) ->
+		flow.showNext(figma.Add_Detail)
+	figma.next_2.onClick (event, layer) ->
+		flow.showNext(figma.Add_Detail)
+	# add detail back btn
+	figma.back_7.onClick (event, layer) ->
+		flow.showPrevious()
 
 # Giving Away
 # backI 
