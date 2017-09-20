@@ -49,7 +49,9 @@ figma.post_3.onClick (event, layer) ->
 	# switch to gallery tab after take pic
 	figma.gallery_3.onClick (event, layer) ->
 		flow.showNext(figma.Gallery)
-	# see gallery section for back to cam tab
+	# switch back to cam
+	figma.cam.onClick (event, layer) ->
+		flow.showPrevious()
 	# back btn to browse
 	figma.back_9.onClick (event, layer) ->
 		flow.showPrevious()
@@ -58,13 +60,13 @@ figma.post_3.onClick (event, layer) ->
 	# switch to gallery tab
 # 	figma.gallery_4.onClick (event, layer) ->
 # 		flow.showNext(figma.Gallery)
+
 	# gallery back btn to browse
 	figma.back_8.onClick (event, layer) ->
 		flow.showPrevious()
 		flow.showPrevious()
-	# switch back to cam
-	figma.cam.onClick (event, layer) ->
 		flow.showPrevious()
+	
 	
 	# go to add detail
 	figma.next.onClick (event, layer) ->
