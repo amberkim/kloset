@@ -67,7 +67,6 @@ figma.post_3.onClick (event, layer) ->
 		flow.showPrevious()
 		flow.showPrevious()
 	
-	
 	# go to add detail
 	figma.next.onClick (event, layer) ->
 		flow.showNext(figma.Add_Detail)
@@ -76,6 +75,9 @@ figma.post_3.onClick (event, layer) ->
 	# add detail back btn
 	figma.back_7.onClick (event, layer) ->
 		flow.showPrevious()
+	# post
+	figma.post.onClick (event, layer) ->
+		flow.showNext(figma.Browse)
 
 # Giving Away
 # backI 
