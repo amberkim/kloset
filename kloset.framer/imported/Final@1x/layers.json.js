@@ -4980,7 +4980,7 @@ window.__imported__['Final@1x/layers.json.js'] = [
             "children" : [
                {
                   "objectId" : "252",
-                  "name" : "layer-1_bag",
+                  "name" : "layer-1_item_bag",
                   "visible" : true,
                   "maskFrame" : null,
                   "layerFrame" : {

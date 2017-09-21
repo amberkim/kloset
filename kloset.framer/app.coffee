@@ -46,6 +46,19 @@ figma.post_6.onClick (event, layer) ->
 		flow.showPrevious()
 		flow.showPrevious()
 
+# Detail_Main_after_added
+# go to bag (added item) doesn't work
+# 	flow.showNext(figma.Bag)
+# view bag
+figma.added.onClick ->
+	flow.showNext(figma.Bag)
+# go to more images
+figma.img_6.onClick ->
+	flow.showNext(figma.Detail_Imgs)
+	# close more images
+	figma.close_4.onClick (event, layer) ->
+		flow.showNext(figma.Detail_Main_after_added)
+
 # go to Camera
 figma.post_3.onClick (event, layer) ->
 	flow.showNext(figma.Camera)
@@ -67,9 +80,9 @@ figma.post_3.onClick (event, layer) ->
 		flow.showPrevious()
 		flow.showPrevious()
 	
-	# switch to gallery tab
-# 	figma.gallery_4.onClick (event, layer) ->
-# 		flow.showNext(figma.Gallery)
+# switch to gallery tab
+figma.gallery_4.onClick (event, layer) ->
+	flow.showNext(figma.Gallery)
 
 	# gallery back btn to browse
 	figma.back_8.onClick (event, layer) ->
@@ -99,7 +112,9 @@ figma.Group_5.onClick ->
 # go to Reviews
 figma.rating_3.onClick ->
 	flow.showNext(figma.Reviews)
-# Amanda's name has to be its own group to go to her Profile
+# go to detail
+figma.first_4.onClick ->
+	flow.showNext(figma.Detail_Main)
 
 # Receiving
 figma.back_3.onClick ->
@@ -113,7 +128,6 @@ figma.rating_2.onClick ->
 # go to Reviews
 figma.write_review.onClick  ->
 	flow.showNext(figma.Rate_form)
-# Amanda's name has to be its own group to go to her Profile
 
 # Reviews
 figma.back_2.onClick ->
@@ -133,3 +147,6 @@ figma.close.onClick ->
 figma.submit.onClick ->
 	flow.showPrevious()
 
+# Profile
+figma.back.onClick ->
+	flow.showPrevious()
